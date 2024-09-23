@@ -1,0 +1,79 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+ 
+.google-font{
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+/* navabar start here */
+.btn1{
+    width: 110px;
+    height: 49px;
+    padding: 12px 32px 12px 32px;
+    border-radius: 8px;
+    background: rgb(180, 244, 97);;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+}
+#navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.buttons{
+    position: sticky;
+    top: 180px;
+}
+/* navabar ends here */
+
+/* modul start here */
+.modal {
+   display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal Content Box */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal Icon */
+.modal-icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px 0;
+    margin-bottom: 15px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+/* Button Inside Modal */
+.modal-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    margin-right: 140px;
+}
+
+.modal-button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+} 

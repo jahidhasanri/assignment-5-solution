@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <!-- daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="google-font w-9/12 mx-auto">
+    <!-- nav start here -->
+    <nav id="navbar" class="bg-[#F9F7F3]  w-full  ">
+       <div class="flex justify-between items-center ml-24 mr-24 pb-10">
+        <!-- 1st div -->
+         <div class="pt-5 pb-5">
+            <button id="blog" class="btn text-[#111111] bg-[#aef058] btn1">Blog</button>
+         </div>
+        <!-- 2nd div -->
+         <div class="flex items-center gap-4">
+            <img src="/assets/logo.png" alt="logo-img">
+            <h5 class="text-[#111111] font-semibold text-xl">Donate Bangladesh</h5>
+         </div>
+        <!-- 3rd div -->
+         <div class="flex items-center gap-2">
+            <img src="/assets/coin.png" alt="coin img">
+            <p class="text-[#111111b5]"> <span id="myTotalMoney">5500</span> BDT</p>
+         </div>
+       </div>
+
+    </nav>
+    <!-- nav ends here -->
+    <!-- main start here -->
+    <main class="bg-[#FFFFFF] pt-20">
+        <!-- button part -->
+         <div class="flex gap-4 justify-center mb-8 buttons">
+             <button class="btn btn-outline w-40 h-14 bg-[#B4F461] rounded-lg border-1 border-[#B4F461] font-semibold text-xl text-[#111111]">Donation</button>
+             <button class="btn btn-outline w-32 h-14 text-[#111111B3] font-medium text-xl border-1 border-[#11111142]">History</button>
+         </div>
+
+         <!-- card start here -->
+            <!-- 1st cart start here -->
+           <div class="w-10/12  border-2 border-[#11111142] bg-[#ffffff68] rounded-2xl mx-auto mb-8">
+            <div class="m-8 grid grid-cols-2 gap-10">
+                <div>
+                    <img class="w-full" src="/assets/noakhali.png" alt="">
+                </div>
+                <!-- details div -->
+                <div>
+                    <button class="btn text-[#111111] h-11 w-36 btn1 mb-4">
+                        <img class="w-6 h-6" src="/assets/coin.png" alt="coin png">
+                        <p><span id="totalamountfrist">0</span> BDT</p>
+                    </button>
+                    <h3 class="font-bold text-xl text-[#111111] mb-5">Donate for Flood at Noakhali, Bangladesh</h3>
+                    <p class="text-[#11111198] font-light text-base mb-7">Noakhali, a coastal district in Bangladesh, often faces severe flooding, especially during monsoon seasons and cyclones. Floods in Noakhali can lead to significant loss of life, destruction of homes, and disruption of daily life, leaving many people in urgent need of food, shelter, clean water, and medical assistance.</p>
+                    <input id="fristDonateInput" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full font-light text-base mb-5" />
+                    <button id="fristDonatebtn" class="btn btn-outline w-full h-14 bg-[#B4F461] rounded-lg border-1 border-[#B4F461] font-semibold text-xl text-[#111111]">Donate Now</button>
+                </div>
+                <!-- onclick="my_modal_1.showModal()" -->
+            </div>
+           </div>
+            <!-- 1st cart ends here -->
+            <!-- 2nd cart start here -->
+           <div class="w-10/12  border-2 border-[#11111142] bg-[#ffffff68] rounded-2xl mx-auto mb-8">
+            <div class="m-8 grid grid-cols-2 gap-10">
+                <div>
+                    <img class="w-full h-96" src="/assets/feni.png" alt="">
+                </div>
+                <!-- details div -->
+                <div>
+                    <button class="btn text-[#111111] h-11 w-36 btn1 mb-4">
+                        <img class="w-4 h-4" src="/assets/coin.png" alt="coin png">
+                        <p><span id="totalamountsecond">600</span> BDT</p>
+                    </button>
+                    <h3 class="font-bold text-xl text-[#111111] mb-5">Donate for Flood Relief in Feni,Bangladesh</h3>
+                    <p class="text-[#11111198] font-light text-base mb-7">Feni, a district in southeastern Bangladesh, is also prone to frequent flooding, particularly during the monsoon season and when cyclones hit the coastal regions. Floods in Feni can cause severe damage to homes, agricultural lands, and infrastructure, displacing many families and creating an urgent need for humanitarian assistance.</p>
+                    <input id="secondDonateInput" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full font-light text-base mb-5" />
+                    <button id="secondDonateBtn" class="btn btn-outline w-full h-14 bg-[#B4F461] rounded-lg border-1 border-[#B4F461] font-semibold text-xl text-[#111111]">Donate Now</button>
+                </div>
+            </div>
+           </div>
+            <!-- 2nd cart ends here -->
+            <!-- 3rd cart start here -->
+           <div class="w-10/12  border-2 border-[#11111142] bg-[#ffffff68] rounded-2xl mx-auto mb-16">
+            <div class="m-8 grid grid-cols-2 gap-10">
+                <div>
+                    <img class="w-full h-96 " src="/assets/quota-protest.png" alt="">
+                </div>
+                <!-- details div -->
+                <div>
+                    <button class="btn text-[#111111] h-11 w-36 btn1 mb-4">
+                        <img class="w-4 h-4" src="/assets/coin.png" alt="coin png">
+                        <p><span id="totalamountThrid">2400</span> BDT</p>
+                    </button>
+                    <h3 class="font-bold text-xl text-[#111111] mb-5">Aid for Injured in the Quota Movement</h3>
+                    <p class="text-[#11111198] font-light text-base mb-7">The Quota Reform Movement in Bangladesh was a significant student-led protest that took place in 2018, primarily demanding reforms in the government job quota system. The movement sought to reduce the percentage of jobs reserved for specific groups, arguing that the system was unfairly limiting opportunities for merit-based candidates.</p>
+                    <input id="thridDonateInput" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full font-light text-base mb-5" />
+                    <button id="thridDonateBtn" class="btn btn-outline w-full h-14 bg-[#B4F461] rounded-lg border-1 border-[#B4F461] font-semibold text-xl text-[#111111]">Donate Now</button>
+                </div>
+            </div>
+           </div>
+            <!-- 3rd cart ends here -->
+         <!-- card ends here -->
+           <!-- modul ends here -->
+                <dialog id="my_modal_1" class="modal">
+                  <div class="modal-content">
+                    <h3 class="text-3xl font-black mb-3">Congrats!</h3>
+                    <img src="/assets/coin.png" class="modal-icon mb-4" alt="">
+                    <p class="font-normal text-sm mb-3">You Have Donated for Humankind</p>
+                    <strong class="font-semibold text-lg mb-3">Successfully</strong>
+                    <div class="modal-action">
+                      <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="modal-button">close confirmation</button>
+                      </form>
+                    </div>
+                  </div>
+                </dialog>
+        
+
+
+          <!-- main ends here -->
+    </main>
+    <!-- footer start here -->
+    <footer>
+        <nav class=" bg-[#F9F7F3] w-full h-24">
+       
+
+    </nav>
+    </footer>
+    <!-- footer ends here -->
+
+
+
+
+    <script src="/js/utilities.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/modal.js"></script>
+</body>
+</html>

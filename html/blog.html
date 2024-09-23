@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <!-- daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="google-font w-9/12 mx-auto">
+    <nav id="navbar" class="bg-[#F9F7F3]  w-full  ">
+        <div class="flex justify-between items-center ml-24 mr-24 pb-10">
+         <!-- 1st div -->
+          <div class="pt-5 pb-5">
+             <button id="home" class="btn text-[#111111] bg-[#aef058] btn1">Home</button>
+          </div>
+         <!-- 2nd div -->
+          <div class="flex items-center gap-4">
+             <img src="/assets/logo.png" alt="logo-img">
+             <h5 class="text-[#111111] font-semibold text-xl">Donate Bangladesh</h5>
+          </div>
+         <!-- 3rd div -->
+          <div class="flex items-center gap-2">
+             <img src="/assets/coin.png" alt="coin img">
+             <p class="text-[#111111b5]"> <span id="myTotalMoney">5500</span> BDT</p>
+          </div>
+        </div>
+     </nav>
+     <!-- main start here -->
+      <main>
+        <h1 class="font-black text-3xl mt-14 mb-10 ml-32">Important FAQ  <i class="fa-solid fa-question"></i></h1>
+
+        <div class="w-10/12 mx-auto border-2 border-[#88101068] rounded-lg">
+            <h3 class="text-xl font-semibold mb-3 ml-5 mt-5 mr-5">What is the Document Object Model(DOM)?</h3>
+            <p class="mb-6 ml-5 mr-5">Answer: <br> The Document Object Model (DOM) is the data representation of the objects that comprise the structure and content of a document on the web.</p>
+            <hr>
+            <h3 class="text-xl font-semibold mb-3 ml-5 mt-5 mr-5">How do you select an element from the DOM?</h3>
+            <p class="mb-6 ml-5 mr-5">Answer: <br>
+                1. Using getElementById.. 
+                <br>  
+                2. Using getElementsByClassName: ..  
+                <br> 
+                3. Using getElementsByTagName: ..
+                <br> 
+                4. Using querySelector: ..
+                <br> 
+                5. Using querySelectorAll: ..
+                <br> 
+                6. Changing the Attribute Value.
+                <br> 
+                7. Changing the Text and HTML Content. ..
+            </p>
+            <hr>
+            <h3 class="text-xl font-semibold mb-3 ml-5 mt-5 mr-5">What is event delegation in the context of the DOM, and why is it useful?</h3>
+            <p class="mb-6 ml-5 mr-5"><Answer:br></Answer:br> Event delegation in JavaScript is a pattern that efficiently handles events. Events can be added to a parent element instead of adding to every single element. It is useful because the event can be listened to on multiple elements by using just one vent handler. It also uses less memory and gives better performance.</p>
+            <hr>
+            <h3 class="text-xl font-semibold mb-3 ml-5 mt-5 mr-5">How do you manipulate an element's attributes and styles using the DOM?</h3>
+            <p class="mb-6 ml-5 mr-5">Answer: <br> Attributes manipulation is used to directly alter the characteristics of HTML elements.
+                <br>
+                Styles manipulation changes the visual representation of elements either by adjusting individual properties or applying CSS classes.</p>
+            <hr>
+           
+        </div>
+      </main>
+    
+
+
+
+
+
+
+<script src="/js/home.js"></script>
+</body>
+</html>
