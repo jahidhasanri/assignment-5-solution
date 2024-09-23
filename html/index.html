@@ -9,18 +9,18 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="google-font w-9/12 mx-auto">
+<body class="google-font w-full lg:w-9/12 mx-auto">
     <!-- nav start here -->
-    <nav id="navbar" class="bg-[#F9F7F3]  w-full  ">
-       <div class="flex justify-between items-center ml-24 mr-24 pb-10">
+    <nav id="navbar" class="bg-[#F9F7F3]  w-full">
+       <div class="flex justify-between items-center ml-2 mb-2 pb-5  lg:ml-24 lg:mr-24 lg:pb-10">
         <!-- 1st div -->
          <div class="pt-5 pb-5">
-            <button id="blog" class="btn text-[#111111] bg-[#aef058] btn1">Blog</button>
+            <button id="blog" class="btn text-[#111111] bg-[#aef058] btn1 mr-2 lg:mr-0">Blog</button>
          </div>
         <!-- 2nd div -->
-         <div class="flex items-center gap-4">
+         <div class="flex items-center gap-2 lg:gap-4">
             <img src="/assets/logo.png" alt="logo-img">
-            <h5 class="text-[#111111] font-semibold text-xl">Donate Bangladesh</h5>
+            <h5 class="text-[#111111] font-medium text-base  lg:font-semibold lg:text-xl">Donate Bangladesh</h5>
          </div>
         <!-- 3rd div -->
          <div class="flex items-center gap-2">
@@ -34,7 +34,7 @@
     <!-- main start here -->
     <main class="bg-[#FFFFFF] pt-20">
         <!-- button part -->
-         <div class="flex gap-4 justify-center mb-8 buttons">
+         <div class="flex gap-4 justify-center mb-8 buttons sticky top-32 lg:top-40">
              <button id="donationtab" class="btn btn-outline w-40 h-14 bg-[#B4F461] rounded-lg border-1 border-[#B4F461] font-semibold text-xl text-[#111111]">Donation</button>
              <button id="history-tab" class="btn btn-outline w-36 h-14 text-[#111111B3] font-medium text-xl border-1 border-[#11111142]">History</button>
          </div>
@@ -43,9 +43,9 @@
           <div id="mainborder">
             <!-- 1st cart start here -->
            <div class="w-10/12  border-2 border-[#11111142] bg-[#ffffff68] rounded-2xl mx-auto mb-8">
-            <div class="m-8 grid grid-cols-2 gap-10">
+            <div class="m-2 lg:m-8 lg:grid lg:grid-cols-2 lg:gap-10">
                 <div>
-                    <img class="w-full" src="/assets/noakhali.png" alt="">
+                    <img class="w-full mb-4 lg:mb-0" src="/assets/noakhali.png" alt="">
                 </div>
                 <!-- details div -->
                 <div>
@@ -53,6 +53,7 @@
                         <img class="w-6 h-6" src="/assets/coin.png" alt="coin png">
                         <p><span id="totalamountfrist">0</span> BDT</p>
                     </button>
+
                     <h3 class="font-bold text-xl text-[#111111] mb-5">Donate for Flood at Noakhali, Bangladesh</h3>
                     <p class="text-[#11111198] font-light text-base mb-7">Noakhali, a coastal district in Bangladesh, often faces severe flooding, especially during monsoon seasons and cyclones. Floods in Noakhali can lead to significant loss of life, destruction of homes, and disruption of daily life, leaving many people in urgent need of food, shelter, clean water, and medical assistance.</p>
                     <input id="fristDonateInput" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full font-light text-base mb-5" />
@@ -64,12 +65,12 @@
             <!-- 1st cart ends here -->
             <!-- 2nd cart start here -->
            <div class="w-10/12  border-2 border-[#11111142] bg-[#ffffff68] rounded-2xl mx-auto mb-8">
-            <div class="m-8 grid grid-cols-2 gap-10">
+            <div class="m-2 lg:m-8 lg:grid lg:grid-cols-2 lg:gap-10">
                 <div>
-                    <img class="w-full h-96" src="/assets/feni.png" alt="">
+                    <img class="w-full h-96 mb-4" src="/assets/feni.png" alt="">
                 </div>
                 <!-- details div -->
-                <div>
+                 <div>
                     <button class="btn text-[#111111] h-11 w-36 btn1 mb-4">
                         <img class="w-4 h-4" src="/assets/coin.png" alt="coin png">
                         <p><span id="totalamountsecond">600</span> BDT</p>
@@ -84,9 +85,9 @@
             <!-- 2nd cart ends here -->
             <!-- 3rd cart start here -->
            <div class="w-10/12  border-2 border-[#11111142] bg-[#ffffff68] rounded-2xl mx-auto mb-16">
-            <div class="m-8 grid grid-cols-2 gap-10">
+            <div class="m-2 lg:m-8 lg:grid lg:grid-cols-2 lg:gap-10">
                 <div>
-                    <img class="w-full h-96 " src="/assets/quota-protest.png" alt="">
+                    <img class="w-full h-96 mb-4" src="/assets/quota-protest.png" alt="">
                 </div>
                 <!-- details div -->
                 <div>
@@ -105,7 +106,7 @@
         </div>
          <!-- card ends here -->
            <!-- modul ends here -->
-                <dialog id="my_modal_1" class="modal">
+                <dialog id="my_modal_1" class="modal w-8/12 h-4/6 ml-20 mt-8 lg:w-full lg:h-full">
                   <div class="modal-content">
                     <h3 class="text-3xl font-black mb-3">Congrats!</h3>
                     <img src="/assets/coin.png" class="modal-icon mb-4" alt="">
