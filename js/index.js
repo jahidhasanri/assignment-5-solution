@@ -54,7 +54,21 @@ document.getElementById('secondDonateBtn').addEventListener('click',function(){
         document.getElementById('totalamountsecond').innerText=secondDivTotalMoney;
         const modal = document.getElementById('my_modal_1');
         modal.showModal();
+
+        const historyItem=document.createElement("div");
+        historyItem.className=
+        "bg-white p-3 rounded-md border-2 border-indigo-500 w-8/12 mx-auto";
+        historyItem.innerHTML=`
+            <p>${secondInput} Taka is Donated for famine-2024 at dhaka, Bangladesh</p>
+            <p>quasba: ${new Date().toLocaleDateString()}</p>    
+        
+        `
+        const historycontainer=document.getElementById('history-item3');
+        historycontainer.insertBefore(historyItem, historycontainer.firstChild)
+       
     }
+
+
     document.getElementById('modabtn').addEventListener('click',function(){
         document.getElementById('secondDonateInput').value = ' ';
     })
@@ -64,7 +78,6 @@ document.getElementById('secondDonateBtn').addEventListener('click',function(){
 
 document.getElementById('thridDonateBtn').addEventListener('click',function(){
     const thridInput= getInputValue('thridDonateInput');
-    console.log(thridInput);
     const totalMoneyOfMyAcount=getvalueWithtext('myTotalMoney');
     const totalMoneyeThridDiv=getvalueWithtext('totalamountThrid');
     
@@ -80,6 +93,19 @@ document.getElementById('thridDonateBtn').addEventListener('click',function(){
         document.getElementById('totalamountThrid').innerText=secondDivTotalMoney;
         const modal = document.getElementById('my_modal_1');
         modal.showModal();
+
+        const historyItem=document.createElement("div");
+        historyItem.className=
+        "bg-white p-3 rounded-md border-2 border-indigo-500 w-8/12 mx-auto";
+        historyItem.innerHTML=`
+            <p>${thridInput} Taka is Donated for famine-2024 at dhaka, Bangladesh</p>
+            <p>Date: ${new Date().toLocaleDateString()}</p>    
+        
+        `
+        const historycontainer=document.getElementById('history-item2');
+        historycontainer.insertBefore(historyItem, historycontainer.firstChild)
+
+       
     }
 
     
@@ -99,7 +125,7 @@ document.getElementById('blog').addEventListener('click',function(){
 })
 
 
-// history btn
+// history btn1
 const donationTab=document.getElementById('donationtab')
 const historyTab=document.getElementById('history-tab')
 historyTab.addEventListener('click',function()
@@ -137,7 +163,82 @@ donationTab.addEventListener('click',function()
         "text-[#111111]");
         document.getElementById('history-item').classList.add("hidden");
 })
-
+// history btn2
+const donationTabs=document.getElementById('donationtab')
+const historyTabs=document.getElementById('history-tab')
+historyTabs.addEventListener('click',function()
+{
+    historyTabs.classList.add("bg-[#B4F461]"
+        ,"rounded-lg",
+        "border-1"
+        ,"border-[#B4F461]"
+        ,"font-semibold",
+        "text-[#111111]");
+    donationTabs.classList.remove("bg-[#B4F461]"
+                ,"rounded-lg",
+                "border-1"
+                ,"border-[#B4F461]"
+                ,"font-semibold"
+            ,"text-[#111111]");
+            document.getElementById('mainborder').classList.add("hidden");
+            document.getElementById('history-item2').classList.remove("hidden");
+}
+)
+donationTabs.addEventListener('click',function()
+{
+    donationTabs.classList.add("bg-[#B4F461]"
+        ,"rounded-lg",
+        "border-1"
+        ,"border-[#B4F461]"
+        ,"font-semibold"
+    ,"text-[#111111]");
+    document.getElementById('mainborder').classList.remove("hidden");
+    historyTabs.classList.remove("bg-[#B4F461]"
+        ,"rounded-lg",
+        "border-1"
+        ,"border-[#B4F461]"
+        ,"font-semibold",
+        "text-[#111111]");
+        document.getElementById('history-item2').classList.add("hidden");
+})
+// history btn3
+const donationTabss=document.getElementById('donationtab')
+const historyTabss=document.getElementById('history-tab')
+historyTabss.addEventListener('click',function()
+{
+    historyTabss.classList.add("bg-[#B4F461]"
+        ,"rounded-lg",
+        "border-1"
+        ,"border-[#B4F461]"
+        ,"font-semibold",
+        "text-[#111111]");
+    donationTabss.classList.remove("bg-[#B4F461]"
+                ,"rounded-lg",
+                "border-1"
+                ,"border-[#B4F461]"
+                ,"font-semibold"
+            ,"text-[#111111]");
+            document.getElementById('mainborder').classList.add("hidden");
+            document.getElementById('history-item3').classList.remove("hidden");
+}
+)
+donationTabss.addEventListener('click',function()
+{
+    donationTabss.classList.add("bg-[#B4F461]"
+        ,"rounded-lg",
+        "border-1"
+        ,"border-[#B4F461]"
+        ,"font-semibold"
+    ,"text-[#111111]");
+    document.getElementById('mainborder').classList.remove("hidden");
+    historyTabss.classList.remove("bg-[#B4F461]"
+        ,"rounded-lg",
+        "border-1"
+        ,"border-[#B4F461]"
+        ,"font-semibold",
+        "text-[#111111]");
+        document.getElementById('history-item3').classList.add("hidden");
+})
 // document.getElementById('modalBtn').addEventListener('click',function(){
 //     window.location.fristInput.reload();
 //    })
