@@ -121,7 +121,7 @@ document.getElementById('thridDonateBtn').addEventListener('click',function(){
 // go to home html
 
 document.getElementById('blog').addEventListener('click',function(){
-    window.location.href='/html/blog.html';
+    window.location.href='/blog.html';
 })
 
 
