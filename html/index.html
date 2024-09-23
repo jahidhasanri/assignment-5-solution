@@ -35,11 +35,12 @@
     <main class="bg-[#FFFFFF] pt-20">
         <!-- button part -->
          <div class="flex gap-4 justify-center mb-8 buttons">
-             <button class="btn btn-outline w-40 h-14 bg-[#B4F461] rounded-lg border-1 border-[#B4F461] font-semibold text-xl text-[#111111]">Donation</button>
-             <button class="btn btn-outline w-32 h-14 text-[#111111B3] font-medium text-xl border-1 border-[#11111142]">History</button>
+             <button id="donationtab" class="btn btn-outline w-40 h-14 bg-[#B4F461] rounded-lg border-1 border-[#B4F461] font-semibold text-xl text-[#111111]">Donation</button>
+             <button id="history-tab" class="btn btn-outline w-36 h-14 text-[#111111B3] font-medium text-xl border-1 border-[#11111142]">History</button>
          </div>
 
          <!-- card start here -->
+          <div id="mainborder" class="border-2 border-red-500">
             <!-- 1st cart start here -->
            <div class="w-10/12  border-2 border-[#11111142] bg-[#ffffff68] rounded-2xl mx-auto mb-8">
             <div class="m-8 grid grid-cols-2 gap-10">
@@ -57,7 +58,7 @@
                     <input id="fristDonateInput" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full font-light text-base mb-5" />
                     <button id="fristDonatebtn" class="btn btn-outline w-full h-14 bg-[#B4F461] rounded-lg border-1 border-[#B4F461] font-semibold text-xl text-[#111111]">Donate Now</button>
                 </div>
-                <!-- onclick="my_modal_1.showModal()" -->
+                
             </div>
            </div>
             <!-- 1st cart ends here -->
@@ -101,6 +102,7 @@
             </div>
            </div>
             <!-- 3rd cart ends here -->
+        </div>
          <!-- card ends here -->
            <!-- modul ends here -->
                 <dialog id="my_modal_1" class="modal">
@@ -119,7 +121,11 @@
                 </dialog>
         
 
+                <!-- history start here -->
+                 <div id="history-item" class="hidden">
 
+                 </div>
+                <!-- history ends here -->
           <!-- main ends here -->
     </main>
     <!-- footer start here -->
