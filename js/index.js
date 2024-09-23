@@ -19,18 +19,21 @@ document.getElementById('fristDonatebtn').addEventListener('click',function(){
         modal.showModal();
         
         
+        const historyItem=document.createElement("div");
+        historyItem.className=
+        "bg-white p-3 rounded-md border-2 border-indigo-500 w-8/12 mx-auto";
+        historyItem.innerHTML=`
+        <p>${fristInput} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
+        <p>Date: ${new Date().toLocaleDateString()}</p>    
+        
+        `
+        const historycontainer=document.getElementById('history-item');
+        historycontainer.insertBefore(historyItem, historycontainer.firstChild)
     }
-    // const fristInput= getInputValue('fristDonateInput');
-const historyItem=document.createElement("div");
-historyItem.className=
-"bg-white p-3 rounded-md border-2 border-indigo-500 w-8/12 mx-auto";
-historyItem.innerHTML=`
-<p>${fristInput} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
-<p>Date: ${new Date().toLocaleDateString()}</p>    
-
-`
-const historycontainer=document.getElementById('history-item');
-historycontainer.insertBefore(historyItem, historycontainer.firstChild)
+    document.getElementById('modabtn').addEventListener('click',function(){
+        document.getElementById('fristDonateInput').value = ' ';
+    })
+   
 })
 // second div
 
@@ -49,14 +52,19 @@ document.getElementById('secondDonateBtn').addEventListener('click',function(){
     
         const secondDivTotalMoney=totalMoneyeSecondDiv+secondInput;
         document.getElementById('totalamountsecond').innerText=secondDivTotalMoney;
-
+        const modal = document.getElementById('my_modal_1');
+        modal.showModal();
     }
+    document.getElementById('modabtn').addEventListener('click',function(){
+        document.getElementById('secondDonateInput').value = ' ';
+    })
 })
 
 // thrid div
 
 document.getElementById('thridDonateBtn').addEventListener('click',function(){
     const thridInput= getInputValue('thridDonateInput');
+    console.log(thridInput);
     const totalMoneyOfMyAcount=getvalueWithtext('myTotalMoney');
     const totalMoneyeThridDiv=getvalueWithtext('totalamountThrid');
     
@@ -70,9 +78,18 @@ document.getElementById('thridDonateBtn').addEventListener('click',function(){
     
         const secondDivTotalMoney=totalMoneyeThridDiv+thridInput;
         document.getElementById('totalamountThrid').innerText=secondDivTotalMoney;
-
+        const modal = document.getElementById('my_modal_1');
+        modal.showModal();
     }
+
+    
+    
+    document.getElementById('modabtn').addEventListener('click',function(){
+        document.getElementById('thridDonateInput').value = ' ';
+    })
 })
+
+
 
 
 // go to home html
@@ -103,8 +120,27 @@ historyTab.addEventListener('click',function()
             document.getElementById('history-item').classList.remove("hidden");
 }
 )
+donationTab.addEventListener('click',function()
+{
+    donationTab.classList.add("bg-[#B4F461]"
+        ,"rounded-lg",
+        "border-1"
+        ,"border-[#B4F461]"
+        ,"font-semibold"
+    ,"text-[#111111]");
+    document.getElementById('mainborder').classList.remove("hidden");
+    historyTab.classList.remove("bg-[#B4F461]"
+        ,"rounded-lg",
+        "border-1"
+        ,"border-[#B4F461]"
+        ,"font-semibold",
+        "text-[#111111]");
+        document.getElementById('history-item').classList.add("hidden");
+})
 
-
+// document.getElementById('modalBtn').addEventListener('click',function(){
+//     window.location.fristInput.reload();
+//    })
 
 
 
