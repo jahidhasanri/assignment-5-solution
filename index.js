@@ -3,10 +3,11 @@ document.getElementById('fristDonatebtn').addEventListener('click',function(){
     const fristInput= getInputValue('fristDonateInput');
     const totalMoneyOfMyAcount=getvalueWithtext('myTotalMoney');
     const totalMenyeFristDiv=getvalueWithtext('totalamountfrist');
+    console.log(typeof(fristInput));
     
-    if (typeof fristInput !== 'number' || isNaN(fristInput) || fristInput < 0 || fristInput > totalMoneyOfMyAcount) {
-        alert('Please enter a valid donation amount!');
-    } 
+    if (isNaN(fristInput) || fristInput <= 0 || fristInput>totalMoneyOfMyAcount) {
+        alert('Please try again!');
+    }
    
     else{
         const updateTotalMoneyOfMyAcount=totalMoneyOfMyAcount-fristInput;
@@ -42,7 +43,7 @@ document.getElementById('secondDonateBtn').addEventListener('click',function(){
     const totalMoneyOfMyAcount=getvalueWithtext('myTotalMoney');
     const totalMoneyeSecondDiv=getvalueWithtext('totalamountsecond');
     
-    if (isNaN(secondInput) || secondInput < 0 || secondInput>totalMoneyOfMyAcount) {
+    if (isNaN(secondInput) || secondInput <= 0 || secondInput>totalMoneyOfMyAcount) {
         alert('Please try again!');
     }
     else{
@@ -81,7 +82,7 @@ document.getElementById('thridDonateBtn').addEventListener('click',function(){
     const totalMoneyOfMyAcount=getvalueWithtext('myTotalMoney');
     const totalMoneyeThridDiv=getvalueWithtext('totalamountThrid');
     
-    if (isNaN(thridInput) || thridInput < 0 || thridInput>totalMoneyOfMyAcount) {
+    if (isNaN(thridInput) || thridInput <= 0 || thridInput>totalMoneyOfMyAcount) {
         alert('Please try again!');
     }
     else{
