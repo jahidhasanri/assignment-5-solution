@@ -3,7 +3,6 @@ document.getElementById('fristDonatebtn').addEventListener('click',function(){
     const fristInput= getInputValue('fristDonateInput');
     const totalMoneyOfMyAcount=getvalueWithtext('myTotalMoney');
     const totalMenyeFristDiv=getvalueWithtext('totalamountfrist');
-    console.log(typeof(fristInput));
     
     if (isNaN(fristInput) || fristInput <= 0 || fristInput>totalMoneyOfMyAcount) {
         alert('Please try again!');
@@ -122,7 +121,7 @@ document.getElementById('thridDonateBtn').addEventListener('click',function(){
 // go to home html
 
 document.getElementById('blog').addEventListener('click',function(){
-    window.location.href='/blog.html';
+    window.location.href='./blog.html';
 })
 
 
