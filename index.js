@@ -23,7 +23,7 @@ document.getElementById('fristDonatebtn').addEventListener('click',function(){
         historyItem.className=
         "bg-white p-3 rounded-md border-2 border-gray-200 mb-5 w-8/12 mx-auto";
         historyItem.innerHTML=`
-        <p class="mb-3 lg:text-2xl font-bold">${fristInput} Taka is Donated for Donate for Flood at Noakhali, Bangladesh</p>
+        <p class="mb-3 lg:text-2xl lg:font-bold">${fristInput} Taka is Donated for Donate for Flood at Noakhali, Bangladesh</p>
         <p class="mb-3">Date: ${new Date()}</p>    
         
         `
@@ -59,7 +59,7 @@ document.getElementById('secondDonateBtn').addEventListener('click',function(){
         historyItem.className=
         "bg-white p-3 rounded-md border-2 border-gray-200 w-8/12 mx-auto mb-5 mt-5";
         historyItem.innerHTML=`
-            <p class="mb-3 lg:font-bold text-2xl ">${secondInput} Taka is Donated for Donate for Flood Relief in Feni,Bangladesh</p>
+            <p class="mb-3 lg:font-bold lg:text-2xl ">${secondInput} Taka is Donated for Donate for Flood Relief in Feni,Bangladesh</p>
             <p class="mb-3">Date: ${new Date()}</p>    
         
         `
@@ -98,7 +98,7 @@ document.getElementById('thridDonateBtn').addEventListener('click',function(){
         historyItem.className=
         "bg-white p-3 rounded-md border-2 border-gray-200 w-8/12 mx-auto";
         historyItem.innerHTML=`
-            <p class="mb-3 lg:font-bold text-2xl">${thridInput} Taka is Donated for Donate for Aid for Injured in the Quota Movement, Bangladesh</p>
+            <p class="mb-3 lg:font-bold lg:text-2xl">${thridInput} Taka is Donated for Donate for Aid for Injured in the Quota Movement, Bangladesh</p>
             <p class="mb-3">Date: ${new Date()}</p>    
         
         `
