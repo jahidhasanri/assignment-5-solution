@@ -1,11 +1,10 @@
 // frist div
 document.getElementById('fristDonatebtn').addEventListener('click',function(){
     const fristInput= getInputValue('fristDonateInput');
-    console.log(fristInput);
     const totalMoneyOfMyAcount=getvalueWithtext('myTotalMoney');
     const totalMenyeFristDiv=getvalueWithtext('totalamountfrist');
     
-    if (Number.isNaN(fristInput)) {
+    if (isNaN(fristInput) || fristInput <= 0 || fristInput>totalMoneyOfMyAcount) {
         alert('Please try again!');
     }
    
