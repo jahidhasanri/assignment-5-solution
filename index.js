@@ -5,7 +5,7 @@ document.getElementById('fristDonatebtn').addEventListener('click',function(){
     const totalMenyeFristDiv=getvalueWithtext('totalamountfrist');
     
     if (isNaN(fristInput) || fristInput <= 0 || fristInput>totalMoneyOfMyAcount) {
-        alert('Please try again!');
+        alert('Please input a valid number');
     }
    
     else{
@@ -23,8 +23,8 @@ document.getElementById('fristDonatebtn').addEventListener('click',function(){
         historyItem.className=
         "bg-white p-3 rounded-md border-2 border-gray-200 mb-5 w-8/12 mx-auto";
         historyItem.innerHTML=`
-        <p class="mb-3 lg:text-2xl font-bold">${fristInput} Taka is Donated for Flood at Noakhali, Bangladesh</p>
-        <p>Date: ${new Date()} GMT +0600 (Bangladesh Standard Time)</p>    
+        <p class="mb-3 lg:text-2xl font-bold">${fristInput} Taka is Donated for Donate for Flood at Noakhali, Bangladesh</p>
+        <p class="mb-3">Date: ${new Date()}</p>    
         
         `
         const historycontainer=document.getElementById('history-item');
@@ -43,7 +43,7 @@ document.getElementById('secondDonateBtn').addEventListener('click',function(){
     const totalMoneyeSecondDiv=getvalueWithtext('totalamountsecond');
     
     if (isNaN(secondInput) || secondInput <= 0 || secondInput>totalMoneyOfMyAcount) {
-        alert('Please try again!');
+        alert('Please input a valid number');
     }
     else{
         const updateTotalMoneyOfMyAcount=totalMoneyOfMyAcount-secondInput;
@@ -59,8 +59,8 @@ document.getElementById('secondDonateBtn').addEventListener('click',function(){
         historyItem.className=
         "bg-white p-3 rounded-md border-2 border-gray-200 w-8/12 mx-auto mb-5 mt-5";
         historyItem.innerHTML=`
-            <p class="mb-3 lg:font-bold text-2xl ">${secondInput} Taka is Donated for Flood Relief in Feni,Bangladesh</p>
-            <p>Date: ${new Date()} GMT +0600 (Bangladesh Standard Time)</p>    
+            <p class="mb-3 lg:font-bold text-2xl ">${secondInput} Taka is Donated for Donate for Flood Relief in Feni,Bangladesh</p>
+            <p class="mb-3">Date: ${new Date()}</p>    
         
         `
         const historycontainer=document.getElementById('history-item3');
@@ -82,7 +82,7 @@ document.getElementById('thridDonateBtn').addEventListener('click',function(){
     const totalMoneyeThridDiv=getvalueWithtext('totalamountThrid');
     
     if (isNaN(thridInput) || thridInput <= 0 || thridInput>totalMoneyOfMyAcount) {
-        alert('Please try again!');
+        alert('Please input a valid number');
     }
     else{
         const updateTotalMoneyOfMyAcount=totalMoneyOfMyAcount-thridInput;
@@ -98,8 +98,8 @@ document.getElementById('thridDonateBtn').addEventListener('click',function(){
         historyItem.className=
         "bg-white p-3 rounded-md border-2 border-gray-200 w-8/12 mx-auto";
         historyItem.innerHTML=`
-            <p class="mb-3 lg:font-bold text-2xl">${thridInput} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
-            <p>Date: ${new Date()} GMT +0600 (Bangladesh Standard Time)</p>    
+            <p class="mb-3 lg:font-bold text-2xl">${thridInput} Taka is Donated for Donate for Aid for Injured in the Quota Movement, Bangladesh</p>
+            <p class="mb-3">Date: ${new Date()}</p>    
         
         `
         const historycontainer=document.getElementById('history-item2');
