@@ -1,10 +1,11 @@
 // frist div
 document.getElementById('fristDonatebtn').addEventListener('click',function(){
     const fristInput= getInputValue('fristDonateInput');
+    console.log(fristInput);
     const totalMoneyOfMyAcount=getvalueWithtext('myTotalMoney');
     const totalMenyeFristDiv=getvalueWithtext('totalamountfrist');
     
-    if (isNaN(fristInput) || fristInput <= 0 || fristInput>totalMoneyOfMyAcount) {
+    if (Number.isNaN(fristInput)) {
         alert('Please try again!');
     }
    
@@ -23,8 +24,8 @@ document.getElementById('fristDonatebtn').addEventListener('click',function(){
         historyItem.className=
         "bg-white p-3 rounded-md border-2 border-gray-200 mb-5 w-8/12 mx-auto";
         historyItem.innerHTML=`
-        <p>${fristInput} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
-        <p>Date: ${new Date().toLocaleDateString()} GMT +0600 (Bangladesh Standard Time)</p>    
+        <p class="mb-3 lg:text-2xl font-bold">${fristInput} Taka is Donated for Flood at Noakhali, Bangladesh</p>
+        <p>Date: ${new Date()} GMT +0600 (Bangladesh Standard Time)</p>    
         
         `
         const historycontainer=document.getElementById('history-item');
@@ -59,8 +60,8 @@ document.getElementById('secondDonateBtn').addEventListener('click',function(){
         historyItem.className=
         "bg-white p-3 rounded-md border-2 border-gray-200 w-8/12 mx-auto mb-5 mt-5";
         historyItem.innerHTML=`
-            <p>${secondInput} Taka is Donated for Flood Relief in Feni,Bangladesh</p>
-            <p>Date: ${new Date().toLocaleDateString()} GMT +0600 (Bangladesh Standard Time)</p>    
+            <p class="mb-3 lg:font-bold text-2xl ">${secondInput} Taka is Donated for Flood Relief in Feni,Bangladesh</p>
+            <p>Date: ${new Date()} GMT +0600 (Bangladesh Standard Time)</p>    
         
         `
         const historycontainer=document.getElementById('history-item3');
@@ -98,8 +99,8 @@ document.getElementById('thridDonateBtn').addEventListener('click',function(){
         historyItem.className=
         "bg-white p-3 rounded-md border-2 border-gray-200 w-8/12 mx-auto";
         historyItem.innerHTML=`
-            <p>${thridInput} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
-            <p>Date: ${new Date().toLocaleDateString()} GMT +0600 (Bangladesh Standard Time)</p>    
+            <p class="mb-3 lg:font-bold text-2xl">${thridInput} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
+            <p>Date: ${new Date()} GMT +0600 (Bangladesh Standard Time)</p>    
         
         `
         const historycontainer=document.getElementById('history-item2');
@@ -182,6 +183,7 @@ historyTabs.addEventListener('click',function()
             ,"text-[#111111]");
             document.getElementById('mainborder').classList.add("hidden");
             document.getElementById('history-item2').classList.remove("hidden");
+            document.getElementById('nav').classList.add("mt-[480px]");
 }
 )
 donationTabs.addEventListener('click',function()
@@ -200,6 +202,7 @@ donationTabs.addEventListener('click',function()
         ,"font-semibold",
         "text-[#111111]");
         document.getElementById('history-item2').classList.add("hidden");
+        document.getElementById('nav').classList.remove("mt-[480px]");
 })
 // history btn3
 const donationTabss=document.getElementById('donationtab')
